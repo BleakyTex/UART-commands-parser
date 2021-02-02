@@ -43,7 +43,7 @@ void I2C_Write (uint8_t  addr, uint8_t  *txdata,
 	for (uint16_t i = 0; i < amount; i++)     // Send [amount] of bytes
 	{
 		I2C1->DR = txdata[i];                   // Send byte
-		while (!(I2C1->SR1 & I2C_SR1_TXE));     // Wait until byte is sent
+		while (!(I2C1->SR1 & I2C_SR1_TXE));     // Wait until byte is transmitted
 	}
 	
 	while (!(I2C1->SR1 & I2C_SR1_BTF));       // Wait while last byte is transmitted
@@ -137,7 +137,7 @@ void I2C_Read (uint8_t addr,  uint8_t *rxdata,
 				I2C1->CR1 |= I2C_CR1_STOP;          // Send stop-bit
 				
 				while (!(I2C1->SR1 & I2C_SR1_RXNE));// Wait for the last byte
-				rxdata[i] = I2C1->DR;               // Store data into array  
+				rxdata[i] = I2C1->DR;               // Store it into array  
 			}
 		}
 	}

@@ -1,9 +1,11 @@
 #ifndef I2C_H_INCLUDED
 #define I2C_H_INCLUDED
 
-#include "stm32f407xx.h"                  // Device header
+#include <stdint.h>
+#include "stm32f4xx.h"                  // Device header
 #include <stdbool.h>
 
+#define DS
 #define I2C_RX_BUF_SIZE 16          // in bytes
 
 void I2C_Init  (void);

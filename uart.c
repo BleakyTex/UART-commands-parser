@@ -9,8 +9,8 @@ void UART_Init (void)
 {
 	/* GPIO setup */
 	RCC->AHB1ENR  |= RCC_AHB1ENR_GPIOAEN;
-	GPIOA->AFR[0] |= (7U << GPIO_AFRL_AFSEL2_Pos)     // USART2_TX
-	                |(7U << GPIO_AFRL_AFSEL3_Pos);    // USART2_RX
+	GPIOA->AFR[0] |= (7U << GPIO_AFRL_AFSEL2_Pos)     // USART2_TX for PB2
+	                |(7U << GPIO_AFRL_AFSEL3_Pos);    // USART2_RX for PB3
 	GPIOA->MODER  |= (0b10 << GPIO_MODER_MODER2_Pos)  // GPIO alt. function for PB2
 	                |(0b10 << GPIO_MODER_MODER3_Pos); // GPIO alt. function for PB3
 	/* UART setup */
@@ -46,11 +46,11 @@ void UART_TX (char tx_data[])
 /* UART received data handler */
 void USART2_IRQHandler (void)
 {
-	static uint8_t position = 0;
+	static volatile uint8_t position = 0;
 	
 	if (USART2->SR & USART_SR_RXNE)
 	{
-		/* Reset the rx string if new command is being received 
+		/* Reset the RX string if new command is being received 
 		   or if rx string overflow is detected                 */
 		if (uart_cmd_received || (position > (UART_TX_BUF_SIZE - 1))) {
 			uart_cmd_received = false;
@@ -58,7 +58,7 @@ void USART2_IRQHandler (void)
 			memset(uart_rx_data, 0, UART_RX_BUF_SIZE);
 		}
 		
-		/* read the command and check for end symbol */
+		/* Read the command and check for end symbol */
 		uart_rx_data[position] = USART2->DR;
 		
 		if (uart_rx_data[position] == '\r') {
