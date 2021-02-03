@@ -15,7 +15,7 @@ I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\C
 I (uart.h)(0x601909E3)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5DB3A200)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5DB3A200)
-I (i2c.h)(0x60199A8B)
+I (i2c.h)(0x601ACCCC)
 I (uartcmds.h)(0x60194403)
 F (.\uart.c)(0x60190F0E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/mcMillan/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/mcMillan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx-o ./objects/uart.o -MD)
 I (uart.h)(0x601909E3)
@@ -32,8 +32,8 @@ I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\C
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5DB3A200)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5DB3A200)
 F (.\uart.h)(0x601909E3)()
-F (.\i2c.c)(0x6018948D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/mcMillan/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/mcMillan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx-o ./objects/i2c.o -MD)
-I (i2c.h)(0x60199A8B)
+F (.\i2c.c)(0x601AF7D3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/mcMillan/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/mcMillan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx-o ./objects/i2c.o -MD)
+I (i2c.h)(0x601ACCCC)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5DB3A200)
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5C5BE482)
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5C5BE482)
@@ -46,8 +46,8 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x5D8A72BE)
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h)(0x5E8F1772)
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5C5BE482)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5DB3A200)
-F (.\i2c.h)(0x60199A8B)()
-F (.\uartcmds.c)(0x60199A8B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/mcMillan/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/mcMillan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx-o ./objects/uartcmds.o -MD)
+F (.\i2c.h)(0x601ACCCC)()
+F (.\uartcmds.c)(0x601B189F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/mcMillan/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/mcMillan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx-o ./objects/uartcmds.o -MD)
 I (uartcmds.h)(0x60194403)
 I (uart.h)(0x601909E3)
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x5C5BE482)
@@ -62,9 +62,10 @@ I (C:\Users\mcMillan\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x5C5BE482)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x5DB3A200)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x5DB3A200)
-I (i2c.h)(0x60199A8B)
+I (i2c.h)(0x601ACCCC)
 I (C:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x5C5BE482)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x5DB3A200)
+I (C:\Keil_v5\ARM\ARMCLANG\include\ctype.h)(0x5DB3A200)
 F (.\uartcmds.h)(0x60194403)()
 F (RTE\Device\STM32F407VGTx\startup_stm32f407xx.s)(0x5C5BE482)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g-I.\RTE\_Target_1-IC:\Users\mcMillan\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\mcMillan\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 529"--pd "_RTE_ SETA 1"--pd "STM32F407xx SETA 1"--list .\listings\startup_stm32f407xx.lst--xref -o .\objects\startup_stm32f407xx.o--depend .\objects\startup_stm32f407xx.d)
 F (RTE\Device\STM32F407VGTx\system_stm32f4xx.c)(0x5C5BE482)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Users/mcMillan/AppData/Local/Arm/Packs/ARM/CMSIS/5.7.0/CMSIS/Core/Include-IC:/Users/mcMillan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.14.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="529" -D_RTE_ -DSTM32F407xx-o ./objects/system_stm32f4xx.o -MD)

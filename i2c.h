@@ -5,8 +5,8 @@
 #include "stm32f4xx.h"                  // Device header
 #include <stdbool.h>
 
-#define DS
 #define I2C_RX_BUF_SIZE 16          // in bytes
+#define I2C_TX_BUF_SIZE 16
 
 void I2C_Init  (void);
 void I2C_Write (uint8_t  addr, 

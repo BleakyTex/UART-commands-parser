@@ -1,6 +1,7 @@
 #include "i2c.h"
 
 uint8_t i2c_rx_data[I2C_RX_BUF_SIZE];
+uint8_t i2c_tx_data[I2C_TX_BUF_SIZE];
 
 /* I2C init*/
 void I2C_Init (void)
@@ -24,7 +25,7 @@ void I2C_Init (void)
 
 /* I2C data transmit function */
 void I2C_Write (uint8_t  addr, uint8_t  *txdata,
-                uint16_t amount, bool isRegAddress)
+                uint16_t amount, bool send_stopBit)
 {
 	if (amount == 0)
 		return;
@@ -49,7 +50,7 @@ void I2C_Write (uint8_t  addr, uint8_t  *txdata,
 	while (!(I2C1->SR1 & I2C_SR1_BTF));       // Wait while last byte is transmitted
 	
 	// Send the stop bit if we're writing data, not requesting read from registers 
-	if (!isRegAddress) {                      
+	if (send_stopBit) {                      
 		I2C1->CR1 |= I2C_CR1_STOP;              // Send stop-bit
 		while (!(I2C1->SR2 & I2C_SR2_MSL));     // Wait for I2C module to turn off
 	}
