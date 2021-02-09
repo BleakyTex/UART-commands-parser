@@ -20,11 +20,4 @@ int main(void)
 		}
 		else __nop(); // An essential kludge to prevent ARMCLANG from breaking the code by "optimization"
 	}
-	
-	//uint8_t ds3231_start_addr = 0;
-	//volatile uint8_t hours, mins, secs;
-	
-	/*
-
-	*/
 }
