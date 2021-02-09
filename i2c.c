@@ -122,7 +122,6 @@ void I2C_Read (uint8_t addr,  uint8_t *rxdata,
 																			      
 		I2C1->DR = (addr << 1) | (1U);          // Send the address with R/W = 1
 		while (!(I2C1->SR1 & I2C_SR1_ADDR));    // Wait while its sent
-		
 		(void) I2C1->SR1;                       // Read SR1 register...
 		(void) I2C1->SR2;                       // ...then read SR2 register to reset ADDR flag
 		
