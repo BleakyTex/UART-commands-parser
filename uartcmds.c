@@ -25,7 +25,7 @@ static const UART_cmd_func UART_func_list[] = {
 extern uint8_t i2c_rx_data[I2C_RX_BUF_SIZE];
 extern uint8_t i2c_tx_data[I2C_TX_BUF_SIZE];
 extern char    uart_tx_data[UART_TX_BUF_SIZE];
-  // Get the amount of functions in UART_func_list
+  // Get the amount of functions in UART_func_list[]
 static const uint8_t  UART_func_count = sizeof(UART_func_list) / sizeof(UART_func_list[0]);  
 
 /* Prints the syntax error message */
